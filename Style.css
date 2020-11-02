@@ -279,6 +279,11 @@ width: auto;
 text-align: center;
 flex-wrap: wrap;
 }
+.ct-btn{
+    border-radius: 2rem;
+    font-weight: bold;
+    left: 0;
+}
 .container3
 {   display: flex;
     justify-content: center;
@@ -454,12 +459,60 @@ footer .column i {
   margin: 2em;
 }
 
-/* It is Adjacent sibling combinator */
 
+footer form input{
+  margin: 5px;
+}
+
+footer .row{
+  display: flex;
+}
+
+.msg{
+  height: 100px;
+  flex-basis: 100%;
+  padding: 0 50px;
+  flex: 11;
+}
+.ct-form {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flx-nm{
+  flex: 3;
+  padding: 0 40px; 
+}
+.flx-ph{
+  flex: 2;
+  padding: 0 20px;
+}
+ .flx-el{
+  flex: 2;
+}
 footer .column i + i {
   padding: 0 0.5em;
 }
-
+.ct-form-2{
+  display: flex;
+}
+.common-btn{
+  padding: 28px 50px;
+  margin: 20px 10px;
+  margin-left: 50px;
+  background: transparent;
+  text-align: center;
+  outline: none;
+  flex: 1;
+  background: linear-gradient(to bottom, #dd2476, #ff512f) ;
+  color: #ddd;
+  border: 2px solid ;
+  height: max-content;
+  border-radius: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  
+}
 .sticky {
   position: fixed;
   top: 0;
