@@ -50,7 +50,11 @@
     margin-top: 8vmin;
   }
   footer .row-pl-0 .input-group{
-    width: 80%;
+    width: auto;
+  }
+
+  footer iframe{
+    width: auto;
   }
 
   .common-btn{
