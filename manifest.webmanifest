@@ -4,7 +4,7 @@
     "background_color": "#e4236f",
     "display": "standalone",
     "orientation": "portrait",
-    "start_url": "./Index.html",
+    "start_url": "./index.html",
     "discription":"A new GMC",
     "icons": [
         {
