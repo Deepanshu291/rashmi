@@ -376,18 +376,18 @@
         <div id="ct-btn" class="col-md-5 col-sm-12">
           <h4 class="text-light"><br></h4>
           <p class="text-muted">Stay Updated</p>
-          <form id="submit-form" class="form-inline" >
+          <form id="submit-form" class="form-inline" name="google-sheet"  method="POST" >
             
             <div class="row">
               <div class="ct-form">
-               <input type="text" id="fname" name="name" class="form-control bg-dark text-white flx-nm" placeholder="Name">
-                <input type="text" id="country"  name="phone" class="form-control bg-dark text-white flx-ph" placeholder="Phone">
+               <input type="text" id="fname" name="Name" class="form-control bg-dark text-white flx-nm" placeholder="Name">
+                <input type="text" id="country"  name="Phone" class="form-control bg-dark text-white flx-ph" placeholder="Phone">
               </div>
-              <input type="text" id="lname" name="email" class="form-control bg-dark text-white flx-el" placeholder="Email">
+              <input type="text" id="lname" name="Email" class="form-control bg-dark text-white flx-el" placeholder="Email">
 
               <div class="ct-form-2">
               <input type="text" id="subject" class="form-control bg-dark text-white msg" name="Message" placeholder="Message...">
-              <button class="common-btn"> <i class="fas fa-arrow-right"></i></button>
+              <button onclick="alertf()" class="common-btn"> <i class="fas fa-arrow-right"></i></button>
              
             </div>
                 <!----d <div class="row">
@@ -441,8 +441,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="./main.js"></script>
+  <script src="./form.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  
   <script>
     window.addEventListener('load', () => {
       registerSW();
