@@ -419,6 +419,8 @@ flex-wrap: wrap;
 }
 
 .section-4 .team {
+  display: flex;
+  justify-content: space-between;
   padding: 10vmin 4vmin;
 }
 
@@ -555,6 +557,9 @@ footer .column i + i {
   .icwrapper{
     display: inline-flex;
   }
+  .icwrapper a{
+    color: #222222;
+  }
   .icwrapper  .icon{
     margin: 0 20px;
     text-align: center;
@@ -630,12 +635,12 @@ footer .column i + i {
   .icwrapper .twitter:hover .tooltip:before{
     background: #46C1F6;
   }
-  .icwrapper .instagram:hover span,
+  .icwrapper  .instagram:hover span ,
   .icwrapper .instagram:hover .tooltip,
   .icwrapper .instagram:hover .tooltip:before{
     background: #e1306c;
   }
-  .icwrapper .github:hover span,
+  .icwrapper .github:hover span ,
   .icwrapper .github:hover .tooltip,
   .icwrapper .github:hover .tooltip:before{
     background: #333;
