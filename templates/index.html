@@ -6,14 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>GMC</title>
-  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="manifest" href=" {{ url_for('static', filename='./manifest.webmanifest') }}">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="./Style.css" />
-  <link rel="stylesheet" href="./mobile-style.css">
-  <link rel="shortcut icon" href=".//assets/icon/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href=" {{ url_for('static', filename='./Style.css') }}" />
+  <link rel="stylesheet" href=" {{ url_for('static', filename='./mobile-style.css') }}">
+  <link rel="shortcut icon" href=" {{ url_for('static', filename='.//assets/icon/favicon.png') }}" type="image/x-icon">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
     <div class="container-fluid p-0">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand"  href="#H">
-          <i ><img src=".//assets/icon/ms-icon.png" alt=""></i></a>
+          <i ><img src=" {{ url_for('static', filename='.//assets/icon/ms-icon.png') }}" alt="logo"></i></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
           <i class="fas fa-align-right text-light"></i>
@@ -53,7 +53,7 @@
     <div class="container text-center">
       <div id="H" class="row">
         <div class="col-md-5 col-sm-12  h-2">
-        <img src="./assets/infra/main.png" alt="Book" />
+        <img src=" {{ url_for('static', filename='./assets/infra/main.png') }}" alt="Book" />
       </div>
         <div class="col-md-7 col-sm-12  text-white">
           <h6>GMC Pvt. Ltd</h6>
@@ -76,7 +76,7 @@
         <div class="row" id="km">
           <div class="col-md-6 col-12">
             <div class="pray">
-              <img src="./assets/img.jpg" alt="Pray" class="" />
+              <img src=" {{ url_for('static', filename='./assets/img.jpg') }}" alt="Pray" class="" />
             </div>
           </div>
           <div class="col-md-6 col-12">
@@ -150,7 +150,7 @@
         <div class="container3">
           <div class="box">
               <div class="imgBox">
-                  <img src="./assets/product/final/mintGreen.jpg">
+                  <img src="  {{ url_for('static', filename='./assets/product/final/mintGreen.jpg') }}">
               </div>
               <div class="details">
                   <div class="content">
@@ -172,7 +172,7 @@
           </div>
           <div class="box">
               <div class="imgBox">
-                  <img src="./assets/product/final/mintPearl.jpg">
+                  <img src=" {{ url_for('static', filename='./assets/product/final/mintPearl.jpg') }}">
               </div>
               <div class="details">
                   <div class="content">
@@ -194,7 +194,7 @@
           </div>
           <div class="box">
               <div class="imgBox">
-                  <img src="./assets/product/final/moonWhite.jpg">
+                  <img src=" {{ url_for('static', filename='./assets/product/final/moonWhite.jpg') }}">
               </div>
               <div class="details">
                   <div class="content">
@@ -217,7 +217,7 @@
           
         <div class="box">
           <div class="imgBox">
-              <img src="./assets/product/final/diamondPearl.jpg">
+              <img src="  {{ url_for('static', filename='./assets/product/final/diamondPearl.jpg') }}">
           </div>
           <div class="details">
               <div class="content">
@@ -239,7 +239,7 @@
       </div>
       <div class="box">
         <div class="imgBox">
-            <img src="./assets/product/final/sugarBrown.jpg">
+            <img src="  {{ url_for('static', filename='./assets/product/final/sugarBrown.jpg') }}">
         </div>
         <div class="details">
             <div class="content">
@@ -261,7 +261,7 @@
         </div>
       <div class="box">
         <div class="imgBox">
-            <img src="./assets/product/final/indoSwitch.jpg">
+            <img src=" {{ url_for('static', filename='./assets/product/final/indoSwitch.jpg') }}">
         </div>
         <div class="details">
             <div class="content">
@@ -282,7 +282,7 @@
         </div>
     </div><div class="box">
       <div class="imgBox">
-          <img src="./assets/product/final/prewaldLavender.jpg">
+          <img src=" {{ url_for('static', filename='./assets/product/final/prewaldLavender.jpg') }}">
       </div>
       <div class="details">
           <div class="content">
@@ -311,7 +311,7 @@
           <div class="container3">
             <div class="box">
                 <div class="imgBox">
-                    <img src="./assets/product/final/redPearl.jpg">
+                    <img src="  {{ url_for('static', filename='./assets/product/final/redPearl.jpg') }}">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -333,7 +333,7 @@
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <img src="./assets/product/final/royalLavender.jpg">
+                    <img src=" {{ url_for('static', filename='./assets/product/final/royalLavender.jpg') }}">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -355,7 +355,7 @@
             </div>
             <div class="box">
                 <div class="imgBox">
-                    <img src="./assets/product/final/snowWhire.jpg">
+                    <img src="   {{ url_for('static', filename='./assets/product/final/snowWhire.jpg') }}">
                 </div>
                 <div class="details">
                     <div class="content">
@@ -377,7 +377,7 @@
             </div>
             <div class="box">
               <div class="imgBox">
-                  <img src="./assets/product/final/winterSwiss.jpg">
+                  <img src=" {{ url_for('static', filename='./assets/product/final/winterSwiss.jpg') }}">
               </div>
               <div class="details">
                   <div class="content">
@@ -400,7 +400,7 @@
          
             <div class="box">
               <div class="imgBox">
-                  <img src="./assets/product/final/designerBrown.jpg">
+                  <img src=" {{ url_for('static', filename='./assets/product/final/designerBrown.jpg') }}">
               </div>
               <div class="details">
                   <div class="content">
@@ -428,7 +428,7 @@
         <div class="container3">
           <div class="box">
               <div class="imgBox">
-                  <img src="./assets/product/final/s.k.Bule.jpg">
+                  <img src="  {{ url_for('static', filename='./assets/product/final/s.k.Bule.jpg') }}">
               </div>
               <div class="details">
                   <div class="content">
@@ -450,7 +450,7 @@
           </div>
           <div class="box">
               <div class="imgBox">
-                  <img src="./assets/product/final/riverWhite.jpg">
+                  <img src=" {{ url_for('static', filename='./assets/product/final/riverWhite.jpg') }}">
               </div>
               <div class="details">
                   <div class="content">
@@ -472,7 +472,7 @@
           </div>
           <div class="box">
               <div class="imgBox">
-                  <img src="./assets/product/final/mariamWhite.jpg">
+                  <img src="  {{ url_for('static', filename='./assets/product/final/mariamWhite.jpg') }}">
               </div>
               <div class="details">
                   <div class="content">
@@ -495,7 +495,7 @@
           
         <div class="box">
           <div class="imgBox">
-              <img src="./assets/product/final/cocoBrown.jpg">
+              <img src=" {{ url_for('static', filename='./assets/product/final/cocoBrown.jpg ') }}">
           </div>
           <div class="details">
               <div class="content">
@@ -517,7 +517,7 @@
       </div>
       <div class="box">
         <div class="imgBox">
-            <img src="./assets/product/final/leafGreen.jpg">
+            <img src=" {{ url_for('static', filename='./assets/product/final/leafGreen.jpg') }}">
         </div>
         <div class="details">
             <div class="content">
@@ -539,7 +539,7 @@
         </div>
       <div class="box">
         <div class="imgBox">
-            <img src="./assets/product/final/cocoBrown2.jpg">
+            <img src=" {{ url_for('static', filename='./assets/product/final/cocoBrown2.jpg') }}">
         </div>
         <div class="details">
             <div class="content">
@@ -591,7 +591,7 @@
         <div class="col-md-4 col-12 text-center">
             <div class="card mr-2 d-inline-block shadow-lg">
                 <div class="card-img-top">
-                  <img src="./assets/img.jpg" class="img-fluid border-radius p-4" alt="">
+                  <img src=" {{ url_for('static', filename='./assets/img.jpg') }}" class="img-fluid border-radius p-4" alt="">
                 </div>
                 <div class="card-body">
                   <h3 class="card-title">Rashmi Ranjan</h3>
@@ -631,7 +631,7 @@
                   <div class="carousel-item active">
                     <div class="card mr-2 d-inline-block shadow">
                       <div class="card-img-top">
-                        <img src="./assets/img6.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                        <img src="{{ url_for('static', filename='./assets/img6.jpg ') }}" class="img-fluid rounded-circle w-50 p-4" alt="">
                       </div>
                       <div class="card-body">
                         <h3 class="card-title">Ankur Sharma</h3>
@@ -666,7 +666,7 @@
                   <div class="carousel-item">
                     <div class="card  d-inline-block mr-2 shadow">
                       <div class="card-img-top">
-                        <img src="./assets/img5.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
+                        <img src="{{ url_for('static', filename='./assets/img5.jpg ') }}" class="img-fluid rounded-circle w-50 p-4" alt="">
                       </div>
                       <div class="card-body">
                         <h3 class="card-title">Mukesh Kumar</h3>
@@ -708,7 +708,7 @@
         <div class="col-md-4 col-12 text-center">
             <div class="card mr-2 d-inline-block shadow-lg">
                 <div class="card-img-top">
-                  <img src="./assets/img7.jpg" class="img-fluid border-radius p-4" alt="">
+                  <img src=" {{ url_for('static', filename='./assets/img7.jpg') }}" class="img-fluid border-radius p-4" alt="">
                 </div>
                 <div class="card-body">
                   <h3 class="card-title">Deepanshu Sharma</h3>
@@ -812,8 +812,8 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="./main.js"></script>
-  <script src="./form.js"></script>
+  <script src=" {{ url_for('static', filename='./main.js') }}"></script>
+  <script src="  {{ url_for('static', filename='./form.js') }}"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     window.addEventListener('load', () => {
@@ -830,6 +830,7 @@
   }
 }
   </script>
+{{ url_for('static', filename='') }}
  
 </body>
 
