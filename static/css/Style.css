@@ -177,7 +177,7 @@ header .container .col-md-7 p {
 .cover {
   width: 100%;
   height: 55vmin;
-  background: url("./assets/infra/gmc4.jpg");
+  background: url("../../assets/infra/gmc4.jpg");
   background-position: -20rem -15rem;
   background-size: 150%;
   position: relative;
@@ -237,9 +237,12 @@ header .container .col-md-7 p {
 }
 
 .purchase2 > h1 {
+  width: 100vw;
   padding-top: 15vmin;
+  font-size: 80px;
   padding-bottom: 0.1em;
   font-family: var(--Lobster);
+
 }
 
 .purchase > h1 {
@@ -311,9 +314,9 @@ flex-wrap: wrap;
 .container3 .box
 {
 	position: relative;
-	width: 300px;
-	height: auto ;
-	background: rgb(208, 107, 218);
+	/* width: 300px; */
+	height: fit-content ;
+	background: var(--bggradient);
 	margin: 10px;
 	box-sizing: border-box;
 	display: inline-block;
@@ -321,9 +324,11 @@ flex-wrap: wrap;
 }
 .container3 .box .imgBox
 {
+  display: flex;
 	position: static;
 	overflow: hidden;
   height: 370px;
+  width: fit-content;
 }
 .container3 .box .imgBox img
 {
@@ -345,6 +350,10 @@ flex-wrap: wrap;
 	background: rgba(0,0,0,.8);
 	transform: scaleY(0);
 	transition: transform .5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container3 .box:hover .details
 {
@@ -376,7 +385,7 @@ flex-wrap: wrap;
 .section-3 {
   height: 70vmin;
   margin-top: 5vmin;
-  background: url("./assets/infra/gmc3.jpg");
+  background: url("../../assets/infra/gmc3.jpg");
   background-position: center;
   background-size: 100%;
   /*background: var(--bggradient);*/
@@ -420,7 +429,7 @@ flex-wrap: wrap;
 
 .section-4 .team {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 10vmin 4vmin;
 }
 
@@ -490,7 +499,7 @@ footer .row{
   height: 100px;
   flex-basis: 100%;
   padding: 0 50px;
-  flex: 11;
+  /* flex: 11; */
 }
 .ct-form {
   display: flex;
@@ -506,7 +515,7 @@ footer .row{
   padding: 0 20px;
 }
  .flx-el{
-  flex: 2;
+  flex: 3;
 }
 footer .column i + i {
   padding: 0 0.5em;
@@ -552,6 +561,19 @@ footer .column i + i {
 	border: none;
 	cursor: pointer;
 	display: none;
+  }
+
+  /* #lanme{
+    width: 100%;
+    margin: 10px;
+  } */
+
+  /* #sbtn{
+    width: 100%;
+  } */
+
+  #subject{
+    margin-top: 10px;
   }
 
   .icwrapper{

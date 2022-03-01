@@ -11,8 +11,8 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="./Style.css" />
-  <link rel="stylesheet" href="./mobile-style.css">
+  <link rel="stylesheet" href="./static/css/Style.css" />
+  <link rel="stylesheet" href="./static/css/mobile-style.css">
   <link rel="shortcut icon" href=".//assets/icon/favicon.png" type="image/x-icon">
 </head>
 
@@ -421,11 +421,13 @@
               </div>
           </div>
           </div>
+
       <!-- 3rd Group     -->
-      <div class="purchase2 text-center">
-        <h1>Premium</h1>
-      </div>
+     <div class="purchase2 text-center p-5">
+            <h1>Premium</h1>
+          </div>
         <div class="container3">
+          
           <div class="box">
               <div class="imgBox">
                   <img src="./assets/product/final/s.k.Bule.jpg">
@@ -625,10 +627,10 @@
                 </div>
               </div>
         </div>
-        <div class="col-md-4 col-12">
+        <!-- <div class="col-md-4 col-12">
             <div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
                 <div class="carousel-inner text-center">
-                  <div class="carousel-item active">
+                  <!-- <div class="carousel-item active">
                     <div class="card mr-2 d-inline-block shadow">
                       <div class="card-img-top">
                         <img src="./assets/img6.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
@@ -662,8 +664,8 @@
                         <p class="text-black-50">CEO at Google</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
+                  </div> -->
+                  <!-- <div class="carousel-item">
                     <div class="card  d-inline-block mr-2 shadow">
                       <div class="card-img-top">
                         <img src="./assets/img5.jpg" class="img-fluid rounded-circle w-50 p-4" alt="">
@@ -701,11 +703,9 @@
                         <p class="text-black-50">CEO at Google</p>
                       </div>
                     </div>
-                  </div>
-              </div>
-        </div>
-        </div>
-        <div class="col-md-4 col-12 text-center">
+                  </div> -->
+
+                    <div class="col-md-4 col-12 text-center">
             <div class="card mr-2 d-inline-block shadow-lg">
                 <div class="card-img-top">
                   <img src="./assets/img7.jpg" class="img-fluid border-radius p-4" alt="">
@@ -752,6 +752,10 @@
                 </div>
               </div>
         </div>
+              </div>
+        </div>
+        </div> -->
+      
       </div>
     </section>
   </main>
@@ -778,22 +782,24 @@
         <div id="ct-btn" class="col-md-5 col-sm-12">
           <h4 class="text-light"><br></h4>
           <p class="text-muted">Stay Updated</p>
-          <form id="submit-form" class="form-inline" name="google-sheet"  method="POST" >
+          <form id="submit-form" action="https://formsubmit.co/mukesh703197@gmail.com" class="form-inline"   method="POST" >
             
             <div class="row">
               <div class="ct-form">
                <input type="text" id="fname" name="Name" class="form-control bg-dark text-white flx-nm" placeholder="Name">
-                <input type="text" id="country"  name="Phone" class="form-control bg-dark text-white flx-ph" placeholder="Phone">
+                <input type="tel" id="country"  name="Phone" class="form-control bg-dark text-white flx-ph" placeholder="Phone">
+                <input type="hidden" name="_captcha" value="false">
               </div>
-              <input type="text" id="lname" name="Email" class="form-control bg-dark text-white flx-el" placeholder="Email">
-
-              <div class="ct-form-2">
-              <input type="text" id="subject" class="form-control bg-dark text-white msg" name="Message" placeholder="Message...">
-              <button onclick="alertf()"  class="common-btn"> <i class="fas fa-arrow-right"></i></button>
+              <input type="email" id="lname" name="Email" class="form-control bg-dark text-white flx-el" placeholder="Email">
+              <input type="hidden" name="_next" value="http://127.0.0.1:5501/index.html">
+              
+               <input type="text" id="subject" class="form-control bg-dark text-white msg " name="Message" placeholder="Message...">
+            </div> 
+           
              
-            </div>
-               
-            </div>
+            <button id="sbtn"   class="common-btn"> <i class="fas fa-arrow-right"></i></button>
+          
+            
           </div>
           
           </form>
@@ -813,8 +819,9 @@
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="./main.js"></script>
-  <script src="./form.js"></script>
+  <script src="./static/js/main.js"></script>
+  <script src="./static/js/form.js"></script>
+  <script src="./static/js/sw.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>
     window.addEventListener('load', () => {
@@ -824,7 +831,7 @@
     async function registerSW() {
   if ('serviceWorker' in navigator) {
     try {
-      await navigator.serviceWorker.register('sw.js');
+      await navigator.serviceWorker.register('./static/js/sw.js');
     } catch (e) {
       console.log(`SW registration failed`);
     }
